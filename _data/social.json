@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Email",
+        "link": "mailto:ekyllserif@example.com ",
+        "image": "images/social/email.svg"
+    },
+    {
+        "name": "Github",
+        "link": "https://github.com/zerostaticthemes/jekyll-serif-theme",
+        "image": "images/social/github.svg"
+    },
+    {
+        "name": "Facebook",
+        "link": "https://facebook.com",
+        "image": "images/social/facebook.svg"
+    },
+    {
+        "name": "Instagram",
+        "link": "https://instagram.com",
+        "image": "images/social/instagram.svg"
+    }
+]
