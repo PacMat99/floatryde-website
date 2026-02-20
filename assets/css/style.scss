@@ -1,30 +1,41 @@
 ---
 ---
 
-// Colors
-$primary: #e5261f;
-$primary-dark: #a01b16;
-$secondary: #f88379;
-$black: #2f2f41;
-$white: #ffffff;
-$white-offset: #fff6f8;
-$steel: #5c5a5a;
+// Fonts
+$font-family-base: "Roboto", Helvetica, Arial, sans-serif, -apple-system;
+$font-family-heading: "Roboto", Helvetica, Arial, sans-serif, -apple-system;
+
+// Colors (Electric Velocity Palette)
+$primary: #2962FF;        // App: actionBlue - Per bottoni principali, link e icone
+$primary-dark: #0D1B2A;   // App: primaryDark - Per hover scuri o sezioni di forte impatto
+$secondary: #00B0FF;      // App: accentCyan - Per dettagli che devono spiccare
+$black: #0D1B2A;          // App: primaryDark - Sostituisce il grigio scuro per un testo dal tono "Midnight"
+$white: #ffffff;          // App: background - Bianco puro indispensabile per l'outdoor
+$white-offset: #F0F2F5;   // App: surface - Sostituisce il rosa pallido con il tuo grigio ghiaccio
+$steel: #607D8B;          // App: labelStyle color - Un grigio tecnico per testi secondari e bordi
 
 // Links
-$link-color: $primary;
+$link-color: $primary; // #2962FF
 $link-decoration: none;
-$link-hover-color: lighten($primary, 10%);
-$link-hover-decoration: underline;
-
-// Fonts
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$link-hover-color: $secondary; // #00B0FF per un effetto "glow" tech al passaggio del mouse
+$link-hover-decoration: none;
 
 // Footer
-$footer-background-color: $primary;
+// Usiamo il Midnight Blue per un footer solido e autorevole
+$footer-background-color: $primary-dark; 
 $footer-text-color: $white;
-$sub-footer-background-color: darken($primary, 10%);
-$sub-footer-text-color: $white;
+$sub-footer-background-color: darken($primary-dark, 5%);
+$sub-footer-text-color: rgba($white, 0.7); // Testo leggermente smorzato
+
+// --- BORDER RADIUS OVERRIDES ---
+// Allineamento allo stile "bubble/modern" dell'app
+$border-radius:       0.75rem; // ~12px (per input e bottoni)
+$border-radius-lg:    1rem;    // ~16px (per le card e box grandi)
+$border-radius-sm:    0.5rem;  // ~8px
+
+// --- SHADOW OVERRIDES ---
+$box-shadow:          0 8px 24px rgba(0, 0, 0, 0.05); // Ombra morbida ed estesa per le card
+$box-shadow-sm:       0 2px 8px rgba(0, 0, 0, 0.04);
 
 // Bootstrap 5.3.2
 
@@ -114,5 +125,63 @@ body {
   @include media-breakpoint-up(md) {
     font-size: 16px;
     line-height: 1.3;
+  }
+}
+
+// --- CUSTOM COMPONENT OVERRIDES ---
+
+// 1. Navbar (Allineata alla AppBar di Flutter)
+.main-menu ul li a {
+  color: $primary-dark !important; // Testo scuro di default
+  font-weight: 700; // Grassetto
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.5px; // Lettere leggermente più vicine, look moderno
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $primary !important; // Diventa blu Vivido al passaggio del mouse
+  }
+}
+
+// 2. Bottoni (Allineati al FilledButtonTheme)
+.btn-primary {
+  background-color: $primary;
+  border: none;
+  font-weight: 700;
+  padding: 12px 24px;
+  box-shadow: 0 4px 16px rgba(41, 98, 255, 0.4) !important; // Ombra blu "Glow"
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    background-color: lighten($primary, 5%);
+    transform: translateY(-2px); // Effetto sollevamento al passaggio del mouse
+    box-shadow: 0 6px 20px rgba(41, 98, 255, 0.5) !important;
+  }
+}
+
+// 3. Il box "Contact" (Phone/Email)
+// Attualmente ha un rettangolo grigio spigoloso. Arrotondiamolo.
+.contact-box, .intro .bg-light { 
+  background-color: $white-offset !important; // Usa il Grigio Ghiaccio
+  border-radius: $border-radius-lg;
+  border: 1px solid rgba($primary-dark, 0.05); // Bordino impercettibile
+}
+
+// 4. Stile delle Card dei Servizi (Accounting, Business Sales, ecc.)
+.service-summary { // Usa la classe corretta ispezionando l'HTML delle card
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  padding: 2rem;
+  box-shadow: $box-shadow;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px); // Feedback interattivo
+  }
+  
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: $primary; // Titoli blu (o se preferisci, mettili $primary-dark)
   }
 }
