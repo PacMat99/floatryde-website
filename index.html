@@ -46,6 +46,7 @@ layout: null
     </div>
   </section>
 
+  <!-- PROBLEM SECTION -->
   <section class="section section-alt" id="problem">
     <div class="container">
       <div class="text-center">
@@ -55,25 +56,26 @@ layout: null
       </div>
 
       <div class="grid-3">
-        <div class="card">
-          <div class="card-icon">01</div>
+        <div class="card card-accent-orange">
+          <div class="card-icon icon-orange">01</div>
           <h3>The "Trial &amp; Error" Trap</h3>
           <p>Most riders rely purely on personal feel. Incorrect sag and uncoordinated rebound damping cause premature fatigue, arm pump, and loss of traction over rough terrain.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">02</div>
+        <div class="card card-accent-slate">
+          <div class="card-icon icon-slate">02</div>
           <h3>Inaccessible Pro Telemetry</h3>
           <p>Traditional data acquisition systems cost over €1,500, require linear potentiometers, bulky wiring harnesses, and advanced trackside engineering skills to interpret raw graphs.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">03</div>
+        <div class="card card-accent-blue">
+          <div class="card-icon icon-blue">03</div>
           <h3>The FloatRyde Solution</h3>
-          <p>Lightweight, non-invasive wireless nodes. Multi-point synchronous acquisition calibrated against scientific vibration standards (ISO 2631-1 &amp; ISO 5349) to objectively classify dynamic comfort and setup needs.</p>
+          <p>Lightweight, non-invasive wireless nodes. Multi-point synchronous acquisition calibrated against scientific vibration standards (ISO 2631-1 &amp; ISO 5349-1) to objectively classify dynamic comfort and setup needs.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- SOLUTION / HARDWARE SECTION -->
   <section class="section" id="solution">
     <div class="container">
       <div class="text-center">
@@ -95,15 +97,15 @@ layout: null
         </div>
 
         <ul class="hw-list">
-          <li>
+          <li class="hw-item-cyan">
             <h4>Synchronized Multi-Axis Sampling</h4>
             <p>1 Central Master Unit coordinating 2 to 4 Peripheral IMU Nodes wirelessly. Selectable sampling rate (208 Hz / 417 Hz) for detailed dynamic capture across fork, handlebars, and frame.</p>
           </li>
-          <li>
+          <li class="hw-item-blue">
             <h4>ISO Scientific Compliance</h4>
-            <p>Direct normalization of acceleration vectors adhering to <strong>ISO 2631-1</strong> (whole-body vibration) and <strong>ISO 5349</strong> (hand-arm vibration) to objectively measure rider comfort thresholds.</p>
+            <p>Direct normalization of acceleration vectors adhering to <strong>ISO 2631-1</strong> (whole-body vibration) and <strong>ISO 5349-1</strong> (hand-arm vibration) to objectively measure rider comfort thresholds.</p>
           </li>
-          <li>
+          <li class="hw-item-teal">
             <h4>5-Minute Plug &amp; Play Setup</h4>
             <p>Tool-free mounting using modular rubber-backed spacers. Zero cables, integrated LiPo batteries, and instant automatic pairing with the mobile companion app.</p>
           </li>
@@ -112,6 +114,7 @@ layout: null
     </div>
   </section>
 
+  <!-- COMPANION APP SECTION -->
   <section class="section section-alt" id="app">
     <div class="container">
       <div class="text-center">
@@ -121,22 +124,22 @@ layout: null
       </div>
 
       <div class="app-grid">
-        <div class="app-card">
+        <div class="app-card app-card-blue">
           <img src="{{ '/assets/img/smartphone_dashboard.webp' | relative_url }}" alt="Dashboard">
           <h4>Live Telemetry</h4>
           <p>Sensor link status &amp; bike profiles</p>
         </div>
-        <div class="app-card">
+        <div class="app-card app-card-amber">
           <img src="{{ '/assets/img/smartphone_fork_screen.webp' | relative_url }}" alt="Fork Setup">
           <h4>Fork Calibration</h4>
           <p>Travel, air/coil &amp; damper profiling</p>
         </div>
-        <div class="app-card">
+        <div class="app-card app-card-teal">
           <img src="{{ '/assets/img/smartphone_wheels_screen.webp' | relative_url }}" alt="Wheels Setup">
           <h4>Wheel &amp; Tire Setup</h4>
           <p>Rim specs, widths &amp; PSI/BAR units</p>
         </div>
-        <div class="app-card">
+        <div class="app-card app-card-purple">
           <img src="{{ '/assets/img/smartphone_feedback.webp' | relative_url }}" alt="Smart Feedback Concept">
           <h4>Setup Guidance (Concept)</h4>
           <p>ISO-threshold to mechanical adjustment mapping</p>
@@ -145,6 +148,7 @@ layout: null
     </div>
   </section>
 
+  <!-- MARKET VALIDATION SECTION -->
   <section class="section" id="market">
     <div class="container">
       <div class="text-center">
@@ -199,6 +203,7 @@ layout: null
     </div>
   </section>
 
+  <!-- FUTURE ROADMAP & SCALABILITY SECTION -->
   <section class="section section-alt" id="roadmap">
     <div class="container">
       <div class="text-center">
@@ -208,25 +213,25 @@ layout: null
       </div>
 
       <div class="grid-3 roadmap-grid">
-        <div class="card roadmap-card">
+        <div class="card roadmap-card phase-green">
           <div class="roadmap-phase">Phase 01 • Validated</div>
           <h3>Core Telemetry &amp; ISO Baseline</h3>
-          <p>Wireless multi-node hardware prototype, synchronized high-frequency IMU acquisition, and calibrated vibration analysis based on ISO 2631-1 &amp; ISO 5349 standards.</p>
+          <p>Wireless multi-node hardware prototype, synchronized high-frequency IMU acquisition, and calibrated vibration analysis based on ISO 2631-1 &amp; ISO 5349-1 standards.</p>
         </div>
 
-        <div class="card roadmap-card">
+        <div class="card roadmap-card phase-blue">
           <div class="roadmap-phase">Phase 02 • In Development</div>
           <h3>Rule-Based Prescriptive Tuning</h3>
           <p>Automating mechanical setup recommendations (damper rebound, air pressures, tire PSI) mapped from empirical multi-axis disturbance data.</p>
         </div>
 
-        <div class="card roadmap-card">
+        <div class="card roadmap-card phase-purple">
           <div class="roadmap-phase">Phase 03 • Future Expansion</div>
-          <h3>Smart Diagnostics &amp; Telemetry Maintenance</h3>
+          <h3>Smart Diagnostics &amp; Maintenance</h3>
           <p>Predictive component wear tracking based on historical vibration signatures (suspension fluid degradation and kinematic fatigue alerts).</p>
         </div>
 
-        <div class="card roadmap-card">
+        <div class="card roadmap-card phase-orange">
           <div class="roadmap-phase">Phase 04 • OEM Scale</div>
           <h3>OEM &amp; E-Bike Native Integration</h3>
           <p>Direct frame-integrated architecture powered by main e-bike batteries, alongside crowdsourced dynamic data intelligence for component manufacturers.</p>
@@ -235,15 +240,16 @@ layout: null
 
       <div class="text-center" style="margin-top: 30px;">
         <p style="font-size: 0.9rem; color: var(--text-muted);">
-          <em>* Detailed algorithmic blueprints, technical specifications, and co-development terms are available under NDA.</em>
+          <em>* Detailed technical specifications and co-development terms are available under NDA.</em>
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="market">
+  <!-- NDA / CONTACT SECTION -->
+  <section class="section" id="contact">
     <div class="container">
-      <div class="nda-box" id="contact">
+      <div class="nda-box">
         <h3>Technical Partnerships &amp; OEM Licensing</h3>
         <p>
           The hardware prototype is fully operational and field-tested. Acquired multi-axis datasets, ISO-based threshold models, and the predictive tuning roadmap are available for bicycle brands and suspension R&amp;D teams under Non-Disclosure Agreement (NDA).
