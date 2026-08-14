@@ -1,0 +1,266 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FloatRyde | Smart Telemetry & Dynamic Bike Tuning</title>
+  <meta name="description" content="Plug-and-play bicycle telemetry platform for objective vibration analysis and setup optimization based on ISO standards.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo-link">
+        <img src="{{ '/assets/img/logo.webp' | relative_url }}" alt="FloatRyde Logo" class="logo-img" onerror="this.outerHTML='<span style=\'font-weight:900; font-size:1.3rem; color:#0D1B2A;\'>FLOAT<span style=\'color:#2962FF;\'>RYDE</span></span>'">
+      </a>
+      <a href="#contact" class="nav-cta">Contact R&amp;D</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Working Hardware Prototype • Validated Methodology</span>
+      <h1>Smart Tuning for Every Ride</h1>
+      <p class="lead">
+        FloatRyde bridges the gap between subjective rider feelings and overly complex race telemetries. An affordable, plug-and-play multi-node system delivering scientific vibration analysis and actionable tuning recommendations.
+      </p>
+      
+      <div class="btn-group">
+        <a href="#solution" class="btn btn-primary">System Architecture</a>
+        <a href="#contact" class="btn btn-outline">Request Technical Dossier</a>
+      </div>
+
+      <div class="hero-mockups">
+        <img src="{{ '/assets/img/smartphone_dashboard.webp' | relative_url }}" alt="FloatRyde Telemetry Dashboard" class="hero-phone">
+        <img src="{{ '/assets/img/smartphone_feedback.webp' | relative_url }}" alt="FloatRyde Smart Feedback Concept" class="hero-phone">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="problem">
+    <div class="container">
+      <div class="text-center">
+        <span class="badge">The Market Gap</span>
+        <h2>Beyond Guesswork and Race Complexity</h2>
+        <p class="lead">Premium bicycles are frequently ridden with miscalibrated suspensions and improper tire pressures, leaving performance and comfort on the table.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">01</div>
+          <h3>The "Trial &amp; Error" Trap</h3>
+          <p>Most riders rely purely on personal feel. Incorrect sag and uncoordinated rebound damping cause premature fatigue, arm pump, and loss of traction over rough terrain.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">02</div>
+          <h3>Inaccessible Pro Telemetry</h3>
+          <p>Traditional data acquisition systems cost over €1,500, require linear potentiometers, bulky wiring harnesses, and advanced trackside engineering skills to interpret raw graphs.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">03</div>
+          <h3>The FloatRyde Solution</h3>
+          <p>Lightweight, non-invasive wireless nodes. Multi-point synchronous acquisition calibrated against scientific vibration standards (ISO 2631-1 &amp; ISO 5349) to objectively classify dynamic comfort and setup needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="solution">
+    <div class="container">
+      <div class="text-center">
+        <span class="badge">Hardware &amp; Standards</span>
+        <h2>Modular Multi-Node Architecture</h2>
+        <p class="lead">Built to deliver industrial-grade precision through standardized vibration evaluation without unnecessary mechanical complexity.</p>
+      </div>
+
+      <div class="hw-split">
+        <div class="hw-gallery">
+          <div class="hw-img-card">
+            <img src="{{ '/assets/img/central_peripheral.webp' | relative_url }}" alt="FloatRyde Central and Peripheral Units">
+            <span>Central Acquisition Unit &amp; Numbered Peripherals</span>
+          </div>
+          <div class="hw-img-card">
+            <img src="{{ '/assets/img/spacer_peripheral.webp' | relative_url }}" alt="Quick Mount Tube Adapter">
+            <span>Modular Curved Spacers for Fast Zip-Tie Frame Mounting</span>
+          </div>
+        </div>
+
+        <ul class="hw-list">
+          <li>
+            <h4>Synchronized Multi-Axis Sampling</h4>
+            <p>1 Central Master Unit coordinating 2 to 4 Peripheral IMU Nodes wirelessly. Selectable sampling rate (208 Hz / 417 Hz) for detailed dynamic capture across fork, handlebars, and frame.</p>
+          </li>
+          <li>
+            <h4>ISO Scientific Compliance</h4>
+            <p>Direct normalization of acceleration vectors adhering to <strong>ISO 2631-1</strong> (whole-body vibration) and <strong>ISO 5349</strong> (hand-arm vibration) to objectively measure rider comfort thresholds.</p>
+          </li>
+          <li>
+            <h4>5-Minute Plug &amp; Play Setup</h4>
+            <p>Tool-free mounting using modular rubber-backed spacers. Zero cables, integrated LiPo batteries, and instant automatic pairing with the mobile companion app.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="app">
+    <div class="container">
+      <div class="text-center">
+        <span class="badge">Companion App</span>
+        <h2>Real-Time Mobile Experience</h2>
+        <p class="lead">The cross-platform Flutter application connects seamlessly to calibrate hardware, log telemetry runs, and preview automated setup feedback.</p>
+      </div>
+
+      <div class="app-grid">
+        <div class="app-card">
+          <img src="{{ '/assets/img/smartphone_dashboard.webp' | relative_url }}" alt="Dashboard">
+          <h4>Live Telemetry</h4>
+          <p>Sensor link status &amp; bike profiles</p>
+        </div>
+        <div class="app-card">
+          <img src="{{ '/assets/img/smartphone_fork_screen.webp' | relative_url }}" alt="Fork Setup">
+          <h4>Fork Calibration</h4>
+          <p>Travel, air/coil &amp; damper profiling</p>
+        </div>
+        <div class="app-card">
+          <img src="{{ '/assets/img/smartphone_wheels_screen.webp' | relative_url }}" alt="Wheels Setup">
+          <h4>Wheel &amp; Tire Setup</h4>
+          <p>Rim specs, widths &amp; PSI/BAR units</p>
+        </div>
+        <div class="app-card">
+          <img src="{{ '/assets/img/smartphone_feedback.webp' | relative_url }}" alt="Smart Feedback Concept">
+          <h4>Setup Guidance (Concept)</h4>
+          <p>ISO-threshold to mechanical adjustment mapping</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="market">
+    <div class="container">
+      <div class="text-center">
+        <span class="badge">Market Validation</span>
+        <h2>R&amp;D &amp; OEM Commercial Potential</h2>
+        <p class="lead">Key insights from our proprietary empirical research conducted on 328 active cyclists across Road, Gravel, and Mountain Bike disciplines.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-num">73%</div>
+          <div class="stat-label">Positive Purchase Intent</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">55%</div>
+          <div class="stat-label">Core Demographic (35–54 yrs)</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">N=328</div>
+          <div class="stat-label">Statistically Significant Sample (&plusmn;5.4%)</div>
+        </div>
+      </div>
+
+      <div class="data-bars-container">
+        <div class="bar-box">
+          <h4>Purchase Propensity Segmentation</h4>
+          <div class="bar-stacked">
+            <div class="bar-segment bar-primary" style="width: 27%;">27% Hot</div>
+            <div class="bar-segment bar-accent" style="width: 46%;">46% Warm</div>
+            <div class="bar-segment bar-neutral" style="width: 27%;">27%</div>
+          </div>
+          <div class="bar-legend">
+            <span><strong>27%</strong> Early Adopters</span>
+            <span><strong>46%</strong> Plug &amp; Play / Price-driven</span>
+          </div>
+        </div>
+
+        <div class="bar-box">
+          <h4>Target Age Distribution</h4>
+          <div class="bar-stacked">
+            <div class="bar-segment bar-neutral" style="width: 25%;">25%</div>
+            <div class="bar-segment bar-primary" style="width: 55%;">55% Core Target (35-54)</div>
+            <div class="bar-segment bar-neutral" style="width: 20%;">20%</div>
+          </div>
+          <div class="bar-legend">
+            <span>&lt; 35 years (25%)</span>
+            <span><strong>35–54 years (55%)</strong></span>
+            <span>55+ years (20%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="roadmap">
+    <div class="container">
+      <div class="text-center">
+        <span class="badge">Ecosystem Vision</span>
+        <h2>Development Roadmap &amp; Future Expansions</h2>
+        <p class="lead">FloatRyde is designed as an evolving ecosystem. While Phase 1 validation is completed, advanced software analytics and hardware integration modules are actively mapped for industry co-development.</p>
+      </div>
+
+      <div class="grid-3 roadmap-grid">
+        <div class="card roadmap-card">
+          <div class="roadmap-phase">Phase 01 • Validated</div>
+          <h3>Core Telemetry &amp; ISO Baseline</h3>
+          <p>Wireless multi-node hardware prototype, synchronized high-frequency IMU acquisition, and calibrated vibration analysis based on ISO 2631-1 &amp; ISO 5349 standards.</p>
+        </div>
+
+        <div class="card roadmap-card">
+          <div class="roadmap-phase">Phase 02 • In Development</div>
+          <h3>Rule-Based Prescriptive Tuning</h3>
+          <p>Automating mechanical setup recommendations (damper rebound, air pressures, tire PSI) mapped from empirical multi-axis disturbance data.</p>
+        </div>
+
+        <div class="card roadmap-card">
+          <div class="roadmap-phase">Phase 03 • Future Expansion</div>
+          <h3>Smart Diagnostics &amp; Telemetry Maintenance</h3>
+          <p>Predictive component wear tracking based on historical vibration signatures (suspension fluid degradation and kinematic fatigue alerts).</p>
+        </div>
+
+        <div class="card roadmap-card">
+          <div class="roadmap-phase">Phase 04 • OEM Scale</div>
+          <h3>OEM &amp; E-Bike Native Integration</h3>
+          <p>Direct frame-integrated architecture powered by main e-bike batteries, alongside crowdsourced dynamic data intelligence for component manufacturers.</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 30px;">
+        <p style="font-size: 0.9rem; color: var(--text-muted);">
+          <em>* Detailed algorithmic blueprints, technical specifications, and co-development terms are available under NDA.</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="market">
+    <div class="container">
+      <div class="nda-box" id="contact">
+        <h3>Technical Partnerships &amp; OEM Licensing</h3>
+        <p>
+          The hardware prototype is fully operational and field-tested. Acquired multi-axis datasets, ISO-based threshold models, and the predictive tuning roadmap are available for bicycle brands and suspension R&amp;D teams under Non-Disclosure Agreement (NDA).
+        </p>
+        <div class="btn-group">
+          <a href="mailto:contact@floatryde.it?subject=FloatRyde%20Technical%20Dossier%20Request%20(NDA)" class="btn btn-primary">Request Technical Dossier (NDA)</a>
+          <a href="{{ '/assets/contact.vcf' | relative_url }}" class="btn btn-outline" style="background:transparent; color:#fff; border-color:#CFD8DC;">Download vCard (.vcf)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 FloatRyde Project. All rights reserved. Sensor Architecture &amp; ISO-Based Dynamic Analysis.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
