@@ -6,7 +6,7 @@ layout: null
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FloatRyde | Smart Telemetry & Dynamic Bike Tuning</title>
+  <title>FloatRyde | Smart Telemetry &amp; Dynamic Bike Tuning</title>
   <meta name="description" content="Plug-and-play bicycle telemetry platform for objective vibration analysis and setup optimization based on ISO standards.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,25 +15,42 @@ layout: null
   
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body>
 
   <header class="header">
     <div class="container nav-wrapper">
       <a href="#" class="logo-link">
-        <img src="{{ '/assets/img/logo.webp' | relative_url }}" alt="FloatRyde Logo" class="logo-img" onerror="this.outerHTML='<span style=\'font-weight:900; font-size:1.3rem; color:#0D1B2A;\'>FLOAT<span style=\'color:#2962FF;\'>RYDE</span></span>'">
+        <img src="{{ '/assets/img/logo_dark.webp' | relative_url }}" alt="FloatRyde Logo" class="logo-img">
       </a>
-      <a href="#contact" class="nav-cta">Contact R&amp;D</a>
+
+      <!-- HAMBURGER BUTTON (MOBILE) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- NAVIGATION LINKS -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#problem" class="nav-link">Market Gap</a></li>
+          <li><a href="#solution" class="nav-link">Architecture</a></li>
+          <li><a href="#app" class="nav-link">App</a></li>
+          <li><a href="#market" class="nav-link">Validation</a></li>
+          <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Contact R&amp;D</a>
+      </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <span class="badge">Working Hardware Prototype • Validated Methodology</span>
+      <span class="badge">Working Hardware Prototype</span>
       <h1>Smart Tuning for Every Ride</h1>
       <p class="lead">
         FloatRyde bridges the gap between subjective rider feelings and overly complex race telemetries. An affordable, plug-and-play multi-node system delivering scientific vibration analysis and actionable tuning recommendations.
       </p>
-      
+
       <div class="btn-group">
         <a href="#solution" class="btn btn-primary">System Architecture</a>
         <a href="#contact" class="btn btn-outline">Request Technical Dossier</a>
@@ -61,10 +78,10 @@ layout: null
           <h3>The "Trial &amp; Error" Trap</h3>
           <p>Most riders rely purely on personal feel. Incorrect sag and uncoordinated rebound damping cause premature fatigue, arm pump, and loss of traction over rough terrain.</p>
         </div>
-        <div class="card card-accent-slate">
-          <div class="card-icon icon-slate">02</div>
+        <div class="card card-accent-red">
+          <div class="card-icon icon-red">02</div>
           <h3>Inaccessible Pro Telemetry</h3>
-          <p>Traditional data acquisition systems cost over €1,500, require linear potentiometers, bulky wiring harnesses, and advanced trackside engineering skills to interpret raw graphs.</p>
+          <p>Traditional data acquisition systems cost over €1,000, require linear potentiometers, bulky wiring harnesses, and advanced trackside engineering skills to interpret raw graphs.</p>
         </div>
         <div class="card card-accent-blue">
           <div class="card-icon icon-blue">03</div>
@@ -99,13 +116,13 @@ layout: null
         <ul class="hw-list">
           <li class="hw-item-cyan">
             <h4>Synchronized Multi-Axis Sampling</h4>
-            <p>1 Central Master Unit coordinating 2 to 4 Peripheral IMU Nodes wirelessly. Selectable sampling rate (208 Hz / 417 Hz) for detailed dynamic capture across fork, handlebars, and frame.</p>
+            <p>1 Central Master Unit coordinating 2 to 4 Peripheral IMU Nodes wirelessly. Selectable sampling rate (208 Hz / 417 Hz) for detailed dynamic capture across fork, handlebar, and frame.</p>
           </li>
           <li class="hw-item-blue">
             <h4>ISO Scientific Compliance</h4>
             <p>Direct normalization of acceleration vectors adhering to <strong>ISO 2631-1</strong> (whole-body vibration) and <strong>ISO 5349-1</strong> (hand-arm vibration) to objectively measure rider comfort thresholds.</p>
           </li>
-          <li class="hw-item-teal">
+          <li class="hw-item-amber">
             <h4>5-Minute Plug &amp; Play Setup</h4>
             <p>Tool-free mounting using modular rubber-backed spacers. Zero cables, integrated LiPo batteries, and instant automatic pairing with the mobile companion app.</p>
           </li>
@@ -119,27 +136,27 @@ layout: null
     <div class="container">
       <div class="text-center">
         <span class="badge">Companion App</span>
-        <h2>Real-Time Mobile Experience</h2>
-        <p class="lead">The cross-platform Flutter application connects seamlessly to calibrate hardware, log telemetry runs, and preview automated setup feedback.</p>
+        <h2>Post-Ride Insights &amp; App Experience</h2>
+        <p class="lead">The cross-platform app connects seamlessly to customize bike setup profiles (frame, wheels, suspensions), manage sensor nodes, download recorded telemetry runs, and preview automated setup feedback.</p>
       </div>
 
       <div class="app-grid">
-        <div class="app-card app-card-blue">
+        <div class="app-card  app-card-accent-blue">
           <img src="{{ '/assets/img/smartphone_dashboard.webp' | relative_url }}" alt="Dashboard">
-          <h4>Live Telemetry</h4>
-          <p>Sensor link status &amp; bike profiles</p>
+          <h4>Device &amp; Setup Hub</h4>
+          <p>Active bike selection &amp; sensor status</p>
         </div>
-        <div class="app-card app-card-amber">
+        <div class="app-card app-card-accent-amber">
           <img src="{{ '/assets/img/smartphone_fork_screen.webp' | relative_url }}" alt="Fork Setup">
           <h4>Fork Calibration</h4>
           <p>Travel, air/coil &amp; damper profiling</p>
         </div>
-        <div class="app-card app-card-teal">
+        <div class="app-card app-card-accent-teal">
           <img src="{{ '/assets/img/smartphone_wheels_screen.webp' | relative_url }}" alt="Wheels Setup">
           <h4>Wheel &amp; Tire Setup</h4>
           <p>Rim specs, widths &amp; PSI/BAR units</p>
         </div>
-        <div class="app-card app-card-purple">
+        <div class="app-card app-card-accent-purple">
           <img src="{{ '/assets/img/smartphone_feedback.webp' | relative_url }}" alt="Smart Feedback Concept">
           <h4>Setup Guidance (Concept)</h4>
           <p>ISO-threshold to mechanical adjustment mapping</p>
@@ -164,11 +181,11 @@ layout: null
         </div>
         <div class="stat-box">
           <div class="stat-num">55%</div>
-          <div class="stat-label">Core Demographic (35–54 yrs)</div>
+          <div class="stat-label">Core Demographic (35-54 yrs)</div>
         </div>
         <div class="stat-box">
-          <div class="stat-num">N=328</div>
-          <div class="stat-label">Statistically Significant Sample (&plusmn;5.4%)</div>
+          <div class="stat-num">328</div>
+          <div class="stat-label">Active Riders Surveyed (&plusmn;5.4% Margin of Error)</div>
         </div>
       </div>
 
@@ -195,7 +212,7 @@ layout: null
           </div>
           <div class="bar-legend">
             <span>&lt; 35 years (25%)</span>
-            <span><strong>35–54 years (55%)</strong></span>
+            <span><strong>35-54 years (55%)</strong></span>
             <span>55+ years (20%)</span>
           </div>
         </div>
@@ -203,7 +220,7 @@ layout: null
     </div>
   </section>
 
-  <!-- FUTURE ROADMAP & SCALABILITY SECTION -->
+  <!-- FUTURE ROADMAP and SCALABILITY SECTION -->
   <section class="section section-alt" id="roadmap">
     <div class="container">
       <div class="text-center">
@@ -227,8 +244,8 @@ layout: null
 
         <div class="card roadmap-card phase-purple">
           <div class="roadmap-phase">Phase 03 • Future Expansion</div>
-          <h3>Smart Diagnostics &amp; Maintenance</h3>
-          <p>Predictive component wear tracking based on historical vibration signatures (suspension fluid degradation and kinematic fatigue alerts).</p>
+          <h3>Predictive Maintenance &amp; Human-Machine Biomechanics</h3>
+          <p>Predictive hardware wear monitoring (suspension fluid &amp; bearings) paired with wearable multi-sensor coaching to assess active riding technique, energy conservation, and dynamic efficiency.</p>
         </div>
 
         <div class="card roadmap-card phase-orange">
@@ -246,18 +263,43 @@ layout: null
     </div>
   </section>
 
-  <!-- NDA / CONTACT SECTION -->
+  <!-- CONTACT & COLLABORATION SECTION -->
   <section class="section" id="contact">
     <div class="container">
       <div class="nda-box">
-        <h3>Technical Partnerships &amp; OEM Licensing</h3>
-        <p>
-          The hardware prototype is fully operational and field-tested. Acquired multi-axis datasets, ISO-based threshold models, and the predictive tuning roadmap are available for bicycle brands and suspension R&amp;D teams under Non-Disclosure Agreement (NDA).
-        </p>
-        <div class="btn-group">
-          <a href="mailto:contact@floatryde.it?subject=FloatRyde%20Technical%20Dossier%20Request%20(NDA)" class="btn btn-primary">Request Technical Dossier (NDA)</a>
-          <a href="{{ '/assets/contact.vcf' | relative_url }}" class="btn btn-outline" style="background:transparent; color:#fff; border-color:#CFD8DC;">Download vCard (.vcf)</a>
+        <div class="text-center">
+          <span class="badge">Open to R&amp;D Partnerships</span>
+          <h2>Let's Connect &amp; Explore Collaborations</h2>
+          <p class="lead">
+            Find this approach interesting? If you see potential value for your brand or want to explore co-development opportunities, let's get in touch and discuss next steps.
+          </p>
         </div>
+
+        <!-- B2B INQUIRY FORM (Formspree) -->
+        <form action="https://formspree.io/f/xoeankbp" method="POST" class="contact-form">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required class="form-input">
+            <input type="text" name="company" placeholder="Company / Brand (Optional)" class="form-input">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email Address" required class="form-input">
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="3" placeholder="Tell me about your project, questions, or collaboration ideas..." required class="form-input form-textarea"></textarea>
+          </div>
+          
+          <div class="contact-btn-group">
+            <button type="submit" class="btn btn-submit">Get in Touch</button>
+            <a href="{{ '/assets/contact.vcf' | relative_url }}" class="btn btn-vcf" download>
+              <svg class="vcf-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+                <path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"></path>
+              </svg>
+              Save Contact (.vcf)
+            </a>
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -267,6 +309,24 @@ layout: null
       <p>&copy; 2026 FloatRyde Project. All rights reserved. Sensor Architecture &amp; ISO-Based Dynamic Analysis.</p>
     </div>
   </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('.nav-link, .nav-menu .nav-cta');
+
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('is-active');
+      navMenu.classList.toggle('is-active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('is-active');
+        navMenu.classList.remove('is-active');
+      });
+    });
+  </script>
 
 </body>
 </html>
