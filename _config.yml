@@ -3,6 +3,7 @@ description: "Plug-and-play telemetry platform and dynamic vibration analysis fo
 baseurl: "" # Lascia vuoto se usi dominio custom o username.github.io, oppure metti "/nome-repo"
 url: "https://floatryde.it"
 permalink: pretty
+github_username: PacMat99
 
 # Build settings
 markdown: kramdown
