@@ -375,12 +375,6 @@ section[id] {
   margin-top: 40px;
 }
 
-.hw-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .hw-img-card {
   background: #FFFFFF;
   border-radius: var(--radius-card);
@@ -428,6 +422,65 @@ section[id] {
 .hw-list p {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+/* --- FIELD TEST HARDWARE SHOWCASE --- */
+.hw-showcase-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hw-card-action {
+  position: relative;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--outline-light);
+  background: #000;
+}
+
+.hw-card-action img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.hw-badge-live {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(13, 27, 42, 0.85);
+  color: #00E676; /* verde LED acceso */
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 230, 118, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.hw-subgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.hw-subgrid .hw-img-card {
+  padding: 8px;
+}
+
+.hw-subgrid .hw-img-card img {
+  height: 100px;
+  object-fit: cover;
+}
+
+.hw-subgrid .hw-img-card span {
+  font-size: 0.72rem;
+  margin-top: 4px;
 }
 
 /* --- APP SHOWCASE --- */
@@ -825,4 +878,14 @@ section[id] {
     padding: 0 10px;
   }
   .hero-phone { max-width: 160px; }
+  .hw-card-action img {
+    height: 190px;
+  }
+  .hw-subgrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  .hw-subgrid .hw-img-card span {
+    font-size: 0.65rem;
+  }
 }
